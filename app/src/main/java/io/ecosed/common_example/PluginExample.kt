@@ -17,6 +17,9 @@ class PluginExample : FlutterPluginProxy {
     }
 
     override fun onMethodCall(call: MethodCallProxy, result: ResultProxy) {
-
+        when (call.method) {
+            "" -> result.success("")
+            else -> result.notImplemented()
+        }
     }
 }

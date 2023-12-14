@@ -3,6 +3,8 @@ package io.ecosed.common_example
 import android.app.Activity
 import androidx.lifecycle.Lifecycle
 import io.ecosed.common.FlutterPluginProxy
+import io.ecosed.common.MethodCallProxy
+import io.ecosed.common.ResultProxy
 
 class PluginExample : FlutterPluginProxy {
 
@@ -14,7 +16,7 @@ class PluginExample : FlutterPluginProxy {
 
     }
 
-    override fun onMethodCall() {
+    override fun onMethodCall(call: MethodCallProxy, result: ResultProxy) {
 
     }
 }

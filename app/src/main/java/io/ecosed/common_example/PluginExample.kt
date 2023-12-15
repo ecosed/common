@@ -16,6 +16,10 @@ class PluginExample : FlutterPluginProxy {
 
     }
 
+    override fun attach() {
+
+    }
+
     override fun onMethodCall(call: MethodCallProxy, result: ResultProxy) {
         when (call.method) {
             "" -> result.success("")

@@ -1,2 +1,2 @@
 # common
-interface
+common
